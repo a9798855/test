@@ -69,7 +69,7 @@ public class InformAction {
 		 
 		 String  userName = "shuhemf";
 		 String  passWord = "shmf2018";
-	     String  iemi = "862743030092243,862743030092250";
+	     String  iemi = "862743030092243,862743030092250,356726088634969";
 	    
 //		 StringBuffer  imeiList = new StringBuffer();
 //		 imeiList.append("{");
