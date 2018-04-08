@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>测试天气</title>
+</head>
+<body>
+<form action="127.0.0.1:8080/getweather" method="GET">
+<input type="submit" value="提交" />
+<br/> 
+</form>
+
+<a href="https://api.douban.com/v2/user/abei">查询</a>  
+<div id="info"></div>  
+</body>  
+<script type="text/javascript">  
+    $(function () {  
+        $.ajax({  
+            type: 'GET',  
+            url: 'https://api.douban.com/v2/user/abei',  
+            async: true,  
+            jsonp: 'jsoncallback',  
+            success: function (data) {  
+             var result = $.parseJSON(data);  
+               $('#info').html(result);  
+
+  
+            },  
+            error: function () {  
+                $('#info').html("有问题");  
+            }  
+        });  
+  
+    });  
+</script>  
+</html>  
+
+</body>
+</html>
