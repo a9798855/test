@@ -69,6 +69,7 @@ public class InformAction {
 		 
 		 String  userName = "shuhemf";
 		 String  passWord = "shmf2018";
+		 
 	     String  iemi = "862743030092243,862743030092250,356726088634969";
 	    
 //		 StringBuffer  imeiList = new StringBuffer();
@@ -88,7 +89,7 @@ public class InformAction {
 		 String  sign = getMD5(signStr.toString());
 		 String strValue = null;
 		 
-		 String  content = "【极推】测试数据，1234567。";
+		 String  content = "【极推】测试数据2，1234567。";
 		 
 		 String reqUrl = "http://43.243.130.37:8099/api/imei/send";
 	        JSONObject paramJson=new JSONObject();

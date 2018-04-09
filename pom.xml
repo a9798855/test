@@ -161,7 +161,7 @@
         <dependency>  
         <groupId>mysql</groupId>  
         <artifactId>mysql-connector-java</artifactId>  
-        <version>6.0.5</version>  
+        <version>5.1.26</version>  
 </dependency> 
    <dependency>  
     <groupId>org.apache.tomcat.maven</groupId>
@@ -203,6 +203,15 @@
 
 </plugin>
       </plugins>
+       <!-- 默认源代码和资源文件目录配置   强制跳转
+        <sourceDirectory>src/main/java</sourceDirectory>  
+        <resources>
+            <resource>  
+                <directory>src/main/resources</directory>  
+            </resource> 
+        </resources>
+        -->  
+        
    </build>
   
 
